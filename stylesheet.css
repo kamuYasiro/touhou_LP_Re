@@ -1,0 +1,1276 @@
+body {
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+
+header{
+  width:100%;
+  height:100%;
+  position: fixed;
+  z-index: 2;
+}
+.slideR {
+  cursor: pointer;
+  position:absolute;
+  right: -170px;
+  width: 200px;
+}
+.slideR:nth-child(1){
+  top: 11%;
+}
+.slideR:nth-child(2){
+  top: 22%;
+}
+.slideR:nth-child(3){
+  top: 33%;
+}
+.slideR:nth-child(4){
+  top: 44%;
+}
+.slideR:nth-child(5){
+  top: 55%;
+}
+.slideR:nth-child(6){
+  top: 66%;
+}
+.slideR:nth-child(7){
+  top: 77%;
+}
+header .slideR a p{
+  display: inline-block;
+  color:black;
+  padding:20%;
+  font-size:24px;
+  font-weight:bold;
+  font-family: serif;
+}
+header .slideR:nth-child(1) a p{
+  padding:20% 37%;
+}
+.top{
+  background-color: gray;
+}
+.koumakyou{
+  background-color: red;
+}
+.youyoumu{
+  background-color: rgb(255, 0, 255);
+}
+.eiyasyou{
+  background-color: white;
+}
+.kaeiduka{
+  background-color: rgb(255, 118, 141);
+}
+.huujinroku{
+  background-color: rgb(255, 217, 0);
+}
+.tireiden{
+  background-color: green;
+}
+
+.first{
+  text-align: center;
+  width:100%;
+  height:1000px;
+  position:relative;
+  z-index: 1;
+}
+
+.backimg{
+  position: relative;
+  width: 100%;
+  height:1000px;
+}
+.backimg img{
+  width: 100%;
+  height:1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.first .font{
+  font-family: serif;
+  width:100%;
+  height:1080px;
+  position: absolute;
+  z-index: 21;
+  top:120px;
+}
+.first h3{
+  font-size:60px;
+  filter: drop-shadow(0px 1px 1px white);
+}
+.first h1{
+  font-size:200px;
+  margin-top:180px;
+  filter: drop-shadow(0px 1px 1px white);
+}
+.first h2{
+  font-size:60px;
+  margin-top:150px;
+  filter: drop-shadow(0px 1px 1px white);
+}
+
+.touhou{
+  padding:100px;
+  text-align: center;
+	opacity : 0;
+	transform : translate(0, 100px);
+	transition : all 500ms;
+}
+.touhou h3{
+  font-size:36px;
+  margin-bottom:50px;
+}
+.touhou p{
+  line-height:2;
+  font-size:24px;
+}
+
+.series{
+  font-family: serif;
+  padding:260px 0 260px 0;
+  text-align: center;
+  background-position:center;
+}
+
+/* 紅魔郷 */
+.kouma{
+  background-image: url(画像/赤い月.jpg);
+  background-attachment: fixed;
+  padding-bottom:330px;
+}
+.series h2{
+  display:inline-block;
+  margin:0 auto;
+  border-bottom:4px solid red;
+}
+.scroll{
+	opacity : 0;
+	transform : translate(0, 100px);
+	transition : all 500ms;
+}
+.series h2:first-child{
+  font-size:60px;
+  margin-bottom:4px;
+  letter-spacing:24px;
+}
+.series h2:last-of-type{
+  font-size:24px;
+  margin-bottom:100px;
+}
+.kouma h2:last-of-type{
+  margin-bottom:300px;
+}
+.coment{
+  font-weight:bold;
+  font-size:36px;
+  margin-top:700px;
+}
+.kouma .images{
+  position: relative;
+  z-index: 3;
+}
+.flex{
+  display: flex;
+  filter: drop-shadow(0px 5px 5px rgb(87, 87, 87));
+  position:absolute;
+  padding-top:20px;
+}
+.box{
+  width:50%;
+  cursor:pointer;
+}
+.box img{
+  width:100%;
+  position:relative;
+}
+.kouma .box p{
+  font-size:60px;
+  filter: drop-shadow(0px 1px 0px white);
+  position: absolute;
+  top:43%;
+  left:43%;
+  z-index: 3;
+  display: none;
+}
+#left1,#right1{
+  position:relative;
+}
+.left{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:1080px;
+  background-image: url(画像/紅魔郷_フラン１.jpg);
+  z-index: 2;
+
+  display:none;
+}
+.right{
+  position:absolute;
+  top:0px;
+  left:100%;
+  width:100%;
+  height:1080px;
+  background-image: url(画像/紅魔郷_フラン２.jpg);
+  z-index: 2;
+
+  display:none;
+}
+.left img,.left video,.right img,.right video{
+  position:absolute;
+  border:1px solid white;
+
+  display:none;
+}
+.left .img1{
+  width:55%;
+  top:1%;
+  left:1%;
+  z-index: 2;
+}
+.left .img2{
+  width:65%;
+  top:50%;
+  left:34%;
+}
+.left span{
+  font-size:100px;
+  opacity:0.5;
+  position:absolute;
+  top:3%;
+  left:92%;
+  cursor:pointer;
+}
+.right .img1{
+  width:55%;
+  top:1%;
+  left:44%;
+}
+.right .img2{
+  width:55%;
+  top:49%;
+  left:1%;
+}
+.right span{
+  font-size:100px;
+  opacity:0.5;
+  position:absolute;
+  top:3%;
+  left:7%;
+  cursor:pointer;
+}
+
+/* 妖々夢 */
+.youmu{
+  background-image: url(画像/Clip25.jpg);
+  background-attachment: fixed;
+}
+.youmu .flex{
+  position:static;
+  flex-wrap: wrap;
+  filter:none;
+  line-height:0;
+}
+.youmu .box{
+  overflow:hidden;
+}
+.youmu img{
+  transition: all,1s;
+}
+.youmu img:hover{
+  transform:scale(1.2,1.2);
+}
+.youmu .coment{
+  margin-top:200px;
+}
+.youmu h2{
+  border-bottom:4px solid rgb(255, 0, 255);
+}
+.youmu .flex{
+  position: relative;
+  z-index: 3;
+}
+
+.fadetop{
+	opacity : 0;
+	transform : translate(0, -100px);
+	transition : all 500ms;
+}
+.faderight{
+	opacity : 0;
+	transform : translate(100px, 0);
+	transition : all 500ms;
+}
+.fadebottom{
+	opacity : 0;
+	transform : translate(0, 100px);
+	transition : all 500ms;
+}
+.fadeleft{
+	opacity : 0;
+	transform : translate(-100px, 0);
+	transition : all 500ms;
+}
+.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+
+  /* 永夜抄 */
+.eiya{
+  background-image: url(画像/Clip26.jpg);
+  background-attachment: fixed;
+  height:2200px;
+}
+.eiya h2{
+  border-bottom:4px solid white;
+}
+.eiya .flex{
+  padding:0 10%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  filter:none;
+}
+.eiya .box{
+  width:45%;
+  height:550px;
+  margin-bottom:50px;
+  background-color:rgba(255,255,255,0);
+  text-align: left;
+	transition : all 1000ms;
+  cursor: default;
+}
+.eiya .boxclipin{
+  background-color:rgba(255,255,255,0.5);
+}
+.eiya img{
+  width:0;
+  height:70%;
+	transition : all 500ms;
+  width:100%;
+}
+.eiya .clipin{
+  width:100%;
+}
+.eiya .box h3{
+  opacity:0;
+	transition : all 1000ms;
+  transition-delay: 500ms;
+}
+.eiya .box .h3clipin{
+  opacity:1;
+}
+.eiya .box h3:nth-child(2){
+  text-align:left;
+  margin-top:12px;
+  font-size:24px;
+  padding-left:20px;
+}
+.eiya .box h3:nth-child(3){
+  text-align:left;
+  font-size:48px;
+  margin-top:12px;
+  padding-left:20px;
+}
+.eiya .box h3:nth-child(4){
+  text-align:left;
+  font-size:36px;
+  margin-top:12px;
+  padding-left:20px;
+}
+.eiya .box span{
+  float:right;
+  font-size:24px;
+  position:relative;
+  top:-24px;
+  left:-12px;
+}
+.eiya .coment{
+  margin-top:2000px;
+}
+
+/* 花映塚 */
+.kaei{
+  background-image:url(画像/caraful.png);
+  background-attachment: fixed;
+}
+.kaei h2{
+  border-bottom:4px solid rgb(255, 118, 141);
+}
+.kaei .images{
+  position:relative;
+  z-index: 3;
+  height:1080px;
+}
+.kaei .rd{
+  margin-top:100px;
+  font-size:60px;
+  padding:400px 0;
+}
+.kaei .rd a{
+  padding:10px;
+  border-radius: 10%;
+  cursor:pointer;
+  transition:all 1s;
+}
+.kaei .rd a:first-child{
+  background-color:white;
+}
+.kaei .rd a:last-child{
+  color:white;
+  background-color:black;
+}
+.kaei .rd a:first-child:hover{
+  padding:200px;
+}
+.kaei .rd a:last-child:hover{
+  padding:200px;
+}
+.kaei .rd p{
+  margin:0 2%;
+  display:inline-block;
+  filter: drop-shadow(1px 1px 0px white);
+}
+.kaei .light{
+  position:absolute;
+  top:0;
+  left:0;
+
+  display:none;
+}
+.kaei .light video{
+  width:100%;
+}
+.kaei .light .flex{
+  position:absolute;
+  top:10%;
+  left:0;
+  z-index: 2;
+  filter:none;
+}
+.kaei .light .box{
+  margin:0 1%;
+  cursor:default;
+}
+.kaei .light p{
+  font-size:60px;
+  margin:4% 0;
+  display:inline-block;
+  cursor:pointer;
+  padding:10px 20px;
+  border-radius: 10%;
+  background-color:white;
+}
+.kaei .light img{
+  opacity:1;
+  transition:all 0.5s;
+  filter: drop-shadow(0px 5px 5px rgb(87, 87, 87));
+}
+.kaei .light img:hover{
+  opacity:0.1;
+}
+.kaei .light .box:first-child{
+  width:33%;
+}
+.kaei .dark{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+
+  display:none;
+}
+.kaei .dark video{
+  width:100%;
+  height:1080px;
+  object-fit:cover
+}
+.kaei .dark .flex{
+  position:absolute;
+  top:10%;
+  left:0;
+  z-index: 2;
+  filter:none;
+}
+.kaei .dark .box{
+  padding:0 1%;
+  cursor:default;
+}
+.kaei .dark img{
+  margin-bottom:20%;
+}
+.kaei .dark p{
+  font-size:60px;
+  display:inline-block;
+  cursor:pointer;
+  padding:10px 20px;
+  border-radius: 10%;
+  color:white;
+  background-color:black;
+  position:absolute;
+  top:40%;
+  left:46%;
+}
+#close{
+  position:absolute;
+  top:12px;
+  left:94%;
+  font-size:84px;
+  color:white;
+  filter: drop-shadow(0px 1px 0px black);
+  z-index:5;
+  display:none;
+  cursor: pointer;
+}
+.kaei .coment{
+  position:absolute;
+  top:300px;
+  left:41%;
+  z-index: 0;
+}
+
+/* 風神録 */
+.huujin{
+  background-image:url(画像/青空２.jpeg);
+  background-attachment: fixed;
+  background-size:cover;
+}
+.huujin h2{
+  border-bottom:4px solid rgb(255, 217, 0);
+}
+.huujin .images{
+  padding:0 5%;
+}
+.huujin .flex{
+  width:100%;
+  position:relative;
+  z-index: 3;
+  filter:none;
+  padding:0;
+  overflow:hidden;
+}
+.huujin .flex img{
+  width:50%;
+  transition:all 0.3s;
+  cursor: pointer;
+  position:relative;
+}
+.huujin img:hover{
+  opacity:0.9;
+  transform:scale(1.1,1.1);
+}
+.huujin .flex div{
+  display:inline-block;
+  width:50%;
+  font-size:60px;
+  font-family:sans-serif;
+  position:relative;
+  z-index: 1;
+}
+.huujin .flex:nth-child(1) div{
+  background-color:orange;
+}
+.huujin .flex:nth-child(2) div{
+  background-color: green;
+}
+.huujin .flex:nth-child(3) div{
+  background-color: rgb(56, 56, 255);
+}
+.huujin .flex:nth-child(4) div{
+  background-color: gray;
+}
+.huujin .flex:nth-child(5) div{
+  background-color: rgb(54, 255, 47);
+}
+.huujin .flex:nth-child(6) div{
+  background-color: red;
+}
+.huujin .flex:nth-child(7) div{
+  background-color: rgb(214, 104, 214);
+}
+.huujin .flex span{
+  position:absolute;
+  top:30%;
+  left:45%;
+}
+.huujin .flex:nth-child(1) img,.huujin .flex:nth-child(3) img,.huujin .flex:nth-child(5) img,.huujin .flex:nth-child(7) img{
+  left:50%;
+	transition : all 500ms;
+}
+.huujin .flex:nth-child(2) img,.huujin .flex:nth-child(4) img,.huujin .flex:nth-child(6) img{
+  left:-50%;
+	transition : all 500ms;
+}
+.huujinimgB{
+  display: none;
+}
+.huujin .flex div:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  width: 0%;
+  height: 4px;
+  background: black;
+  z-index: -1;
+  transition: all 0.8s;
+}
+.huujin .flex div.isActive:after {
+  width: 100%;
+}
+.huujin .coment{
+  margin-top:200px;
+}
+
+/* 地霊殿 */
+.tirei{
+  background-image:url(画像/a.jpg);
+  background-attachment: fixed;
+  background-size:cover;
+  padding-bottom:0;
+}
+.tirei h2{
+  filter: drop-shadow(0px 1px 0px white);
+  border-bottom:4px solid green;
+}
+.tirei .images{
+  height:1080px;
+  position:relative;
+  z-index: 3;
+}
+.tirei .flex{
+  filter:none;
+}
+.tirei .flex div{
+  width:15%;
+  overflow:hidden;
+}
+.tirei .flex div img{
+  width:100%;
+  height:1080px;
+  object-fit: cover;
+  cursor:pointer;
+  transition:all 0.3s;
+}
+.tirei .flex div:nth-child(1) img{
+  transform:scale(1.6,1.6);
+}
+.tirei .flex div:nth-child(1) img:hover{
+  transform:scale(1.8,1.8);
+}
+.tirei .flex div:nth-child(2) img{
+  transform:scale(1.7,1.7);
+}
+.tirei .flex div:nth-child(2) img:hover{
+  transform:scale(1.9,1.9);
+}
+.tirei .flex div:nth-child(3) img{
+  transform:scale(1.6,1.6);
+}
+.tirei .flex div:nth-child(3) img:hover{
+  transform:scale(1.8,1.8);
+}
+.tirei .flex div:nth-child(4) img{
+  transform:scale(1.15,1.15);
+}
+.tirei .flex div:nth-child(4) img:hover{
+  transform:scale(1.35,1.35);
+}
+.tirei .flex div:nth-child(5) img{
+  transform:scale(1.3,1.3);
+  object-position: 80% 0;
+}
+.tirei .flex div:nth-child(5) img:hover{
+  transform:scale(1.5,1.5);
+}
+.tirei .flex div:nth-child(6) img{
+  transform:scale(1.4,1.4);
+}
+.tirei .flex div:nth-child(6) img:hover{
+  transform:scale(1.6,1.6);
+}
+.tirei .flex div:nth-child(7) img{
+  transform:scale(1.2,1.2);
+  object-position: 65% 0;
+}
+.tirei .flex div:nth-child(7) img:hover{
+  transform:scale(1.4,1.4);
+}
+
+.carousel-wrapper{
+  background-color:black;
+  opacity:0.8;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:19;
+  width:100%;
+  height:100%;
+  display:none;
+}
+#tireiclose{
+  position:fixed;
+  top:2%;
+  right:2%;
+  z-index: 22;
+  font-size:60px;
+  color:white;
+  cursor: pointer;
+  display:none;
+}
+.carousel{
+  display:none;
+  position:fixed;
+  top:10%;
+  left:0;
+  z-index:20;
+}
+.carousel div{
+  display: inline-block;
+  height: 20vw;
+  margin:0 15px;
+  margin-bottom: 25px;
+}
+.carousel img{
+  height: 100%;
+  cursor:pointer;
+}
+.none{
+  pointer-events: none;
+}
+.all{
+  pointer-events: all;
+}
+.yuugi{
+  top:5%;
+  left:30%;
+}
+.yuugi div{
+  height:45vw;
+}
+.rin{
+  top:2%;
+}
+.rin div{
+  height:15vw;
+}
+.oku{
+  top:10%;
+}
+.oku div{
+  height:17vw;
+}
+.koisi div{
+  height:14vw;
+}
+.carousel .future{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.tirei .coment{
+  margin-top:200px;
+  margin-bottom:600px;
+}
+.alert{
+  margin-top:100px;
+  transition-delay: 800ms;
+	line-height:2;
+}
+.alert span{
+  font-weight:bold;
+  background-color: white;
+  padding:5px;
+}
+.a,.b,.c,.d,.e,.f,.g{
+opacity : 0;
+transform : translate(0, 100px);
+transition : all 500ms;
+}
+.b{
+  transition-delay: 100ms;
+}
+.c{
+  transition-delay: 200ms;
+}
+.d{
+  transition-delay: 300ms;
+}
+.e{
+  transition-delay: 400ms;
+}
+.f{
+  transition-delay: 500ms;
+}
+.g{
+  transition-delay: 600ms;
+}
+.aa{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*永夜抄フェードイン*/
+.Item-Box {
+  overflow: hidden;
+}
+.Item-Box-ImgBox {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-transform: translate3d(-100.5%,0,0);
+  transform: translate3d(-100.5%,0,0);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.Item-Box.isShow .Item-Box-ImgBox {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.Item-Box-ImgBox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;/*黒ブロックの色指定*/
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: right;
+  transform-origin: right;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.Item-Box.isShow .Item-Box-ImgBox:before {
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+.Item-Box-ImgBox-Img {
+  width: 100%;
+  padding-top: 62.5%;/*画像比率指定*/
+  transition-duration: 4s;
+  -webkit-transition-timing-function: cubic-bezier(.075,.82,.165,1);
+  transition-timing-function: cubic-bezier(.075,.82,.165,1);
+}
+
+footer{
+  width:100%;
+  position:relative;
+  z-index: 3;
+}
+.tirei .otoi{
+  padding:75px;
+  text-align: center;
+  background-color: rgba(226, 226, 226, 0.5);
+}
+.tirei .otoi p{
+  display: inline-block;
+  font-size:24px;
+  font-weight:bold;
+  padding:20px 120px;
+  color:white;
+  background-color: rgb(240, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  position:relative;
+  z-index: 3;
+}
+footer .footer{
+  padding:50px 0 10px 0;
+  text-align: center;
+  background-color: rgb(66, 66, 66);
+  color:white;
+  position:relative;
+}
+footer .footer h3{
+  font-size:24px;
+  margin-bottom:40px;
+}
+footer .footer ul li{
+  display: inline-block;
+  margin:0 1%;
+  margin-bottom:40px;
+}
+.twitter{
+  padding-bottom:10%;
+}
+.niconico{
+  padding-bottom:5%;
+}
+.pixiv{
+  border-radius:20%;
+}
+footer .footer ul li img{
+  width:36px;
+  height:auto;
+}
+footer #page-top a{
+  border:2px solid white;
+  color:white;
+  font-size:36px;
+  padding:25px 40px;
+  position:absolute;
+  top:40%;
+  right:5%;
+}
+footer #page-top a:hover{
+  background-color: white;
+  color:black;
+}
+
+#otoi {
+      margin:0 auto;
+      text-decoration: none;
+      animation:prunprun 2.2s ease-in infinite;
+      -webkit-animation:prunprun 2.2s ease-in infinite;
+      -moz-animation:prunprun 2.2s ease-in infinite;
+      -o-animation:prunprun 2.2s ease-in infinite;
+      -ms-animation:prunprun 2.2s ease-in infinite;
+  }
+
+   .scrollicon {
+    display: inline-block;
+    padding-top: 70px;
+    position: absolute;
+    top:85%;
+    left:49%;
+  }
+  .scrollicon::before {
+    animation: scroll 3.5s infinite;
+    border: solid #000;
+    border-width: 0 0 1px 1px;
+    content: "";
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 20px;
+  }
+  @keyframes scroll {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    80% {
+      transform: rotate(-45deg) translate(-30px, 30px);
+    }
+    0%, 80%, 100% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+  }
+
+  @media(max-width:480px){
+
+    html{
+      width:100%;
+      overflow-x: hidden;
+    }
+    header .slideR{
+      display: none;
+    }
+    .first{
+      height:700px;
+    }
+    .first .backimg{
+      height:100%;
+    }
+    .first .backimg img{
+      height:100%;
+      object-fit: cover;
+    }
+    .scrollicon{
+      top:77%;
+      left:43%;
+    }
+    .coment{
+      display:none;
+    }
+ 
+.kouma{
+background-image:none;
+background-color:red;
+position:relative;
+}
+.youmu{
+background-image:none;
+background-color:rgb(255,0,255);
+position:relative;
+}
+.eiya{
+background-image:none;
+background-color:white;
+position:relative;
+}
+.kaei{
+background-image:none;
+background-color:rgb(255,118,141);
+position:relative;
+}
+.huujin{
+background-image:none;
+background-color:rgb(255,217,0);
+position:relative;
+}
+.tirei{
+background-image:none;
+background-color:green;
+position:relative;
+}
+.series h2{
+	border-bottom:4px solid black;
+}
+.eiya .boxclipin {
+    background-color: rgba(0,0,0,0.2);
+}
+	  .tirei h2{
+	  filter:none;
+	  }
+	  
+    .first h3{
+      font-size:36px;
+      margin:0;
+      margin-bottom:50px;
+    }
+    .first h1{
+      font-size:100px;
+      margin:0;
+      margin-bottom:70px;
+    }
+    .first h2{
+      font-size:36px;
+      margin:0;
+    }
+    .touhou{
+      padding:20% 10%;
+    }
+    .touhou h3{
+      font-size:20px;
+    }
+    .touhou p{
+      font-size:12px;
+    }
+    .kouma h2:last-of-type {
+      margin-bottom: 150px;
+    }
+    .kouma .flex{
+      flex-wrap: wrap;
+    }
+    .kouma .box{
+      width:100%;
+    }
+    .kouma .left{
+      height:500px;
+      background-position-x:-1500px;
+    }
+    .kouma .left .img1{
+      width:100%;
+    }
+    .kouma .left .img2{
+      width:100%;
+      top:50%;
+      left:1%;
+    }
+    .kouma .left span{
+      top:83%;
+      left:45%;
+      font-size:75px;
+    }
+    .kouma .right{
+      height:500px;
+    }
+    .kouma .right .img1{
+      left:1%;
+      width:100%;
+    }
+    .kouma .right .img2{
+      width:100%;
+      top:45%;
+      left:1%;
+    }
+    .kouma .right span{
+      top:85%;
+      left:45%;
+      font-size:70px;
+    }
+
+    .youmu .box{
+      width:100%;
+    }
+
+    .eiya{
+      height:3000px;
+    }
+    .eiya .flex{
+      padding:0 5%;
+    }
+    .eiya .box{
+      width:100%;
+      height:400px;
+    }
+    .eiya .box:nth-child(5) h3:nth-child(3){
+      font-size:36px;
+    }
+
+    .kaei .rd{
+      padding:200px 0;
+    }
+    .kaei .rd a{
+      display: block;
+      width:50%;
+      margin:0 auto;
+    }
+    .kaei .light video{
+      height:700px;
+      object-fit: cover;
+    }
+    .kaei .light .box:first-child,.kaei .light .box:last-child{
+      display:none;
+    }
+    .kaei .light .box{
+      width:100%;
+      padding:2%;
+    }
+    #close{
+      font-size:60px;
+      top:2%;
+      left:45%;
+    }
+    .kaei .dark video{
+      height:1300px;
+      object-fit: cover;
+    }
+    .kaei .dark .box:nth-child(2) img{
+      display:none;
+    }
+    .kaei .dark .box:nth-child(2) p{
+      display:block;
+      position:static;
+    }
+    .kaei .flex{
+      flex-wrap: wrap;
+    }
+    .kaei .dark .box{
+      width:100%;
+      padding:2%;
+    }
+    .kaei .dark .box img:last-child{
+      margin:0;
+    }
+
+    .huujin .flex{
+      flex-wrap: wrap;
+      width:100%;
+      height:200px;
+    }
+    .huujin .flex img{
+      width:100%;
+      height:100%;
+    }
+    .huujin .flex span{
+      display: none;
+    }
+    .huujin .flex:nth-child(1) img,.huujin .flex:nth-child(3) img,.huujin .flex:nth-child(5) img,.huujin .flex:nth-child(7) img{
+      transform : translate(120%, 0px);
+      transition : all 500ms;
+    }
+    .huujin .flex:nth-child(2) img,.huujin .flex:nth-child(4) img,.huujin .flex:nth-child(6) img{
+      transform : translate(-120%, 0px);
+      transition : all 500ms;
+    }
+
+    .alert span{
+      font-size:12px;
+    }
+    .tirei .flex{
+      flex-wrap: wrap;
+    }
+    .tirei .flex div{
+      width:100%;
+      height:100px;
+    }
+    .tirei .flex div:nth-child(1) img{
+      transform:scale(3,3);
+      object-position:center -320px;
+    }
+    .tirei .flex div:nth-child(2) img{
+      transform:scale(2,2);
+      object-position:center -60px;
+    }
+    .tirei .flex div:nth-child(3) img{
+      transform:scale(3,3);
+      object-position:-221px 85px;
+    }
+    .tirei .flex div:nth-child(4) img{
+      transform:scale(1.5,1.5);
+      object-position:-760px -80px;
+    }
+    .tirei .flex div:nth-child(5) img{
+      transform:scale(2,2);
+      object-position:-1250px 40px;
+    }
+    .tirei .flex div:nth-child(6) img{
+      object-position:center -220px;
+    }
+    .tirei .flex div:nth-child(7) img{
+      object-position:-1000px -280px;
+    }
+    .carousel-wrapper li{
+      height:500px;
+    }
+    .carousel-wrapper li img{
+      line-height:500px;
+      width:100%;
+      margin-top:100px;
+    }
+    .carousel-wrapper span{
+      top:1%;
+      left:45%;
+    }
+    .tirei .otoi p{
+      width:90%;
+      padding:10%;
+    }
+    #otoi{
+      max-width:100%;
+    }
+    footer #page-top a{
+      position:static;
+      padding:10px 30px;
+    }
+    .footer > p{
+      margin-top:50px;
+    }
+    .kaei .coment{
+      left:100%;
+    }
+
+  }
