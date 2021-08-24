@@ -997,7 +997,7 @@ footer #page-top a:hover{
     }
   }
 
-@media(max-width:1280px){
+@media(max-width:1368px){
 
   .first{
     height:700px;
@@ -1015,15 +1015,42 @@ footer #page-top a:hover{
     margin-top:75px;
   }
   .scrollicon{
-    top:85%;
+    top:77%;
   }
   .left,.right{
-    height:750px;
+    height:770px;
+  }
+  .carousel{
+    top:5%;
+  }
+  .yuugi{
+    top:2%;
+  }
+  .rin{
+    top:2%;
+  }
+  .rin div{
+    height:14vw;
+  }
+  .koisi div{
+    height:13vw;
   }
 }
 @media(max-width:1100px){
   .first h1{
     font-size:16vw;
+  }
+  .yuugi{
+    top:15%;
+  }
+  .rin div{
+    height:18vw;
+  }
+  .satori div{
+    height:28vw;
+  }
+  .koisi div{
+    height:16vw;
   }
 }
 
