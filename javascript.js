@@ -240,6 +240,7 @@ $(window).scroll(function (){
     var windowHeight = $(window).height();
     if (scroll > elemPos - windowHeight + 300){
       $(this).css('left','0');
+      $(this).css('transform','translate(0');
     }
   });
 });

@@ -997,7 +997,7 @@ footer #page-top a:hover{
     }
   }
 
-@media(max-width:1368px){
+@media(max-width:1366px){
 
   .first{
     height:700px;
@@ -1273,6 +1273,9 @@ position:relative;
       transform : translate(-120%, 0px);
       transition : all 500ms;
     }
+    .huujin .flex div.isActive:after{
+      width:0;
+    }
 
     .alert span{
       font-size:12px;
@@ -1338,6 +1341,38 @@ position:relative;
     }
     .kaei .coment{
       left:100%;
+    }
+    
+    .carousel{
+      top:15%;
+    }
+    .carousel div{
+      display: inline-block;
+      height: 30vw;
+      margin:0 15px;
+      margin-bottom: 25px;
+    }
+    .yuugi{
+      top:15%;
+      left:15%;
+    }
+    .yuugi div{
+      height:90vw;
+    }
+    .rin{
+      top:15%;
+    }
+    .rin div{
+      height:23vw;
+    }
+    .oku{
+      top:10%;
+    }
+    .oku div{
+      height:24vw;
+    }
+    .koisi div{
+      height:22vw;
     }
 
   }
