@@ -7,6 +7,28 @@
     $(".backimg img:first-child").appendTo(".backimg");
   }, 4000);
 
+  $(window).scroll(function (){
+    $('.touhou h3').each(function(){
+      var elemPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > elemPos - windowHeight + 200){
+        $(this).css({"transform":"scale(1)"});
+      }
+    });
+  });
+  $(window).scroll(function (){
+    $('.touhou p').each(function(){
+      var elemPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > elemPos - windowHeight + 200){
+        $(this).css({"transform":"scale(1)"});
+      }
+    });
+  });
+
+
     $('#left1').hover(function(){
       $('#left1').animate({'width':'55%','opacity':'0.6','top':'-20px'},250),
       $('#peace').show(500)
@@ -157,6 +179,10 @@ $('.faderight img:nth-child(2)').click(function(){
     }
   });
 });
+
+$('.eiya img').click(function(){
+  $('.eiya .box').removeClass('boxclipin');
+})
 
 $('#reverse').hover(function(){
   $('#reverse').text('dark');

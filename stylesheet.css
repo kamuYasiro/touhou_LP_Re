@@ -86,7 +86,7 @@ header .slideR:nth-child(1) a p{
 }
 .backimg img{
   width: 100%;
-  height:1000px;
+  height:100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -96,7 +96,6 @@ header .slideR:nth-child(1) a p{
 .first .font{
   font-family: serif;
   width:100%;
-  height:1080px;
   position: absolute;
   z-index: 21;
   top:120px;
@@ -126,10 +125,14 @@ header .slideR:nth-child(1) a p{
 .touhou h3{
   font-size:36px;
   margin-bottom:50px;
+  transform:scale(0);
+  transition-duration: 1s;
 }
 .touhou p{
   line-height:2;
   font-size:24px;
+  transform:scale(0);
+  transition-duration: 1s;
 }
 
 .series{
@@ -209,6 +212,8 @@ header .slideR:nth-child(1) a p{
   width:100%;
   height:1080px;
   background-image: url(画像/紅魔郷_フラン１.jpg);
+  background-size: cover;
+  background-position:right;
   z-index: 2;
 
   display:none;
@@ -220,6 +225,8 @@ header .slideR:nth-child(1) a p{
   width:100%;
   height:1080px;
   background-image: url(画像/紅魔郷_フラン２.jpg);
+  background-size: cover;
+  background-position:left;
   z-index: 2;
 
   display:none;
@@ -341,7 +348,8 @@ header .slideR:nth-child(1) a p{
 }
 .eiya .box{
   width:45%;
-  height:550px;
+  /* height:550px; */
+  padding-bottom:24px;
   margin-bottom:50px;
   background-color:rgba(255,255,255,0);
   text-align: left;
@@ -420,6 +428,7 @@ header .slideR:nth-child(1) a p{
   border-radius: 10%;
   cursor:pointer;
   transition:all 1s;
+  box-shadow:0 0 20px gray;
 }
 .kaei .rd a:first-child{
   background-color:white;
@@ -747,7 +756,7 @@ header .slideR:nth-child(1) a p{
   pointer-events: none;
 }
 .all{
-  pointer-events: all;
+  pointer-events:auto;
 }
 .yuugi{
   top:5%;
@@ -988,6 +997,37 @@ footer #page-top a:hover{
     }
   }
 
+@media(max-width:1280px){
+
+  .first{
+    height:800px;
+  }
+  .backimg{
+    height:800px;
+  }
+  .first .font{
+    top:80px;
+  }
+  .first h1{
+    margin-top:100px;
+  }
+  .first h2{
+    margin-top:100px;
+  }
+  .scrollicon{
+    top:75%;
+  }
+  .left,.right{
+    height:750px;
+  }
+}
+@media(max-width:1100px){
+  .first h1{
+    font-size:16vw;
+  }
+}
+
+
   @media(max-width:480px){
 
     html{
@@ -1017,32 +1057,32 @@ footer #page-top a:hover{
  
 .kouma{
 background-image:none;
-background-color:red;
+background-color:rgb(224, 0, 0);
 position:relative;
 }
 .youmu{
 background-image:none;
-background-color:rgb(255,0,255);
+background-color:rgb(209, 8, 209);
 position:relative;
 }
 .eiya{
 background-image:none;
-background-color:white;
+background-color:rgb(241, 241, 241);
 position:relative;
 }
 .kaei{
 background-image:none;
-background-color:rgb(255,118,141);
+background-color:rgb(255, 110, 134);
 position:relative;
 }
 .huujin{
 background-image:none;
-background-color:rgb(255,217,0);
+background-color:rgb(245, 191, 14);
 position:relative;
 }
 .tirei{
 background-image:none;
-background-color:green;
+background-color:rgb(20, 114, 20);
 position:relative;
 }
 .series h2{
