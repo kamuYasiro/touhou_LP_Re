@@ -1156,7 +1156,7 @@ position:relative;
     }
     .kouma .left{
       height:500px;
-      background-position-x:-1500px;
+      background-position:right;
     }
     .kouma .left .img1{
       width:100%;
