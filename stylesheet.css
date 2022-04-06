@@ -954,7 +954,7 @@ footer{
 .animoBubble5:hover::before{transform:translate3d(-50%,-50%,0) scale3d(15,15,15)}
       
 footer .footer{
-  padding:50px 0 10px 0;
+  padding:60px 0 24px 0;
   text-align: center;
   background-color: rgb(66, 66, 66);
   color:white;
@@ -988,8 +988,8 @@ footer #page-top a{
   font-size:36px;
   padding:25px 40px;
   position:absolute;
-  top:40%;
-  right:5%;
+  top:30%;
+  right:3%;
 }
 footer #page-top a:hover{
   background-color: white;
