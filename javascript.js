@@ -64,7 +64,7 @@
       }
       ,function(){$('.right video,.right img').fadeIn()}
       );
-      $('.flex').fadeOut();
+      $('.kouma .flex').fadeOut();
     });
     $('#rightback').click(function(){
       $('.right').animate({
@@ -72,7 +72,7 @@
       },function(){$('.right video,.right img').fadeOut()}
       )
       .fadeOut();
-      $('.flex').fadeIn(800);
+      $('.kouma .flex').fadeIn(800);
     });
 
 
