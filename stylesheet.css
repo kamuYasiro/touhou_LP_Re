@@ -1279,6 +1279,9 @@ position:relative;
     .eiya .box:nth-child(5) h3:nth-child(3){
       font-size:36px;
     }
+	  .eiya .flex {
+    margin: 0;
+}
 
     .kaei .rd{
       padding:200px 0;
